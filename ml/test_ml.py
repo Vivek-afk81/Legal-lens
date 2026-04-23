@@ -2,7 +2,6 @@ import json
 from ml.rag import get_answer
 from ml.risk  import analyze_risks
 from ml.summary         import summarize
-from ml.clause_extractor import extract_clauses, group_by_type
 from ml.timeline        import build_timeline
 
 # ─────────────────────────────────────────────────────────────────────────────
