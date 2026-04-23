@@ -13,7 +13,7 @@ def _key(text: str) -> str:
 
 def embed_text(text_list: list[str], use_cache: bool = True) -> np.ndarray:
     """
-    Encode a list of strings → 2-D float32 array (N × 384).
+    Encode a list of strings → 2-D float32 array (N X 384).
     Hits cache for previously seen strings.
     """
     if not use_cache:

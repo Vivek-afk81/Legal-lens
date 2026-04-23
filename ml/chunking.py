@@ -8,13 +8,7 @@ def chunk_text(text, window_size=2, overlap=1):
     """
     Sliding-window chunker over NLTK sentences.
 
-    Args:
-        text        : raw document string
-        window_size : sentences per chunk  (default 2)
-        overlap     : sentences shared between adjacent chunks (default 1)
-
-    Returns:
-        list[str]  — overlapping multi-sentence chunks
+    list[str]  — overlapping multi-sentence chunks
     """
     sentences = sent_tokenize(text)
     sentences = [s.strip() for s in sentences if s.strip()]
