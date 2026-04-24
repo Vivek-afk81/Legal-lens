@@ -1,8 +1,8 @@
 import json
 from ml.rag import get_answer
 from ml.risk  import analyze_risks
-from ml.summary         import summarize
-from ml.timeline        import build_timeline
+from ml.summary import summarize
+from ml.timeline  import build_timeline
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Load sample document

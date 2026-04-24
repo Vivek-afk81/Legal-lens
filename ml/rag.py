@@ -21,9 +21,12 @@ def _load_generator():
 def build_prompt(context: str, query: str) -> str:
     return (
         "You are a legal assistant.\n"
-        "Answer ONLY using the context below.\n"
-        "Be concise and precise.\n"
-        'If the answer is not present, say "Not found in document."\n\n'
+        "Answer the question strictly using ONLY the provided context.\n"
+        "Do not use prior knowledge or make assumptions.\n"
+        "Quote or closely follow the wording from the context when possible.\n"
+        "If multiple relevant clauses exist, combine them clearly.\n"
+        "If the answer is not explicitly present, respond with \"Not found in document.\"\n"
+        "Be concise, precise, and legally accurate.\n\n"
         f"{context}\n\n"
         f"Question: {query}\n"
         "Answer:"
